@@ -1,6 +1,6 @@
 # Library
 - Pandas
-- Mysql
+- Mysql and mysqlclient 
 
 # Export data base
 - Create Database on mysql server
