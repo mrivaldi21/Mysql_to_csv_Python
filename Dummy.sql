@@ -19,16 +19,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `quiz`
+-- Database: `Dummy`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `quiz`
+-- Table structure for table `Dummy`
 --
 
-CREATE TABLE `quiz` (
+CREATE TABLE `Dummy` (
   `id` int NOT NULL,
   `source_id` int NOT NULL,
   `title` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
@@ -45,10 +45,10 @@ CREATE TABLE `quiz` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
 
 --
--- Dumping data for table `quiz`
+-- Dumping data for table `Dummy`
 --
 
-INSERT INTO `quiz` (`id`, `source_id`, `title`, `description`, `filename`, `skp`, `no_cme`, `create_by`, `last_modify_by`, `available_start`, `available_end`) VALUES
+INSERT INTO `Dummy` (`id`, `source_id`, `title`, `description`, `filename`, `skp`, `no_cme`, `create_by`, `last_modify_by`, `available_start`, `available_end`) VALUES
 (3, 1, 'Nilai Diagnostik Pemeriksaan ICT Fetrin Pada Anemia Defisiensi Besi', 'Nilai Diagnostik Pemeriksaan ICT Fetrin Pada Anemia Defisiensi Besi', 'bd31f4ce45ee11bf36c43577fa66cb4a.pdf', 3, '3SKP/SK PB IDI No: 1766/PB/A.4/05/2015', 1, 4, '2019-02-25', '2019-11-26'),
 (4, 1, 'Prognostic Factors of Surgical-Site Infection (SSI) and Length of Hospitalization in Children with Postoperative Intussuception', 'Intususepsi merupakan bentuk invaginasi usus ke dalam bagian usus itu sendiri, dan biasanya melibatkan usus halus dan usus besar. Intususepsi merupakan suatu kondisi emergensi, dimana keterlambatan diagnosis seperti sering terjadi, dapat menyebabkan perforasi usus, obstruksi dan nekrosis.', '11b2c17822d36d4c368874b92b77fd37.pdf', 3, '3SKP/SK PB IDI No : 10188/PB/A.7/09/2015', 3, 4, '2019-02-25', '2019-11-26'),
 (5, 1, 'Perbandingan HbA1c Metode Immunoassay dan IE HPLC pada Kelainan Faal Ginjal ', 'Diabetes Mellitus (DM) adalah kondisi hiperglikemia yang disebabkan karena defisiensi maupun resistensi insulin atau kombinasi keduanya. HbA1c adalah hemoglobin terglikosilasi pada gugus N-terminal, di mana American Diabetes Association (ADA) 2010 dan WHO 2011 telah menggunakan HbA1c untuk diagnosis DM (? 6,5%). Metode standar pengukuran HbA1c menurut National Glycohemoglobin Standardization Program (NGSP) dan Diabetes Control and Complication Trial (DCCT) adalah CE-HPLC. Pengukuran HbA1c dapat dilakukan dengan berbagai cara misalnya metode imunoturbodimetri, yang mungkin dipakai sebagai metode alternatif. Beberapa metode dipengaruhi oleh Hb karbamilasi pada chronic kidney disease (CKD).', '1f41782d9d1dffa17fbdd46ecc016259.pdf', 2, '2SKP/SK PB IDI No : 006266/PB/A.7/09/2016', 3, 4, '2019-02-25', '2019-11-26'),
@@ -119,9 +119,9 @@ INSERT INTO `quiz` (`id`, `source_id`, `title`, `description`, `filename`, `skp`
 --
 
 --
--- Indexes for table `quiz`
+-- Indexes for table `Dummy`
 --
-ALTER TABLE `quiz`
+ALTER TABLE `Dummy`
   ADD PRIMARY KEY (`id`) USING BTREE,
   ADD KEY `subject` (`title`) USING BTREE,
   ADD KEY `source_id` (`source_id`) USING BTREE;
@@ -131,9 +131,9 @@ ALTER TABLE `quiz`
 --
 
 --
--- AUTO_INCREMENT for table `quiz`
+-- AUTO_INCREMENT for table `Dummy`
 --
-ALTER TABLE `quiz`
+ALTER TABLE `Dummy`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 COMMIT;
 
